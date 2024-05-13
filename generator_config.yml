@@ -1,0 +1,14 @@
+provider:
+  name: modoboa
+resources:
+  domains:
+    create:
+      path: /api/v2/domains/
+      method: POST
+    read:
+      path: /api/v2/domains/{id}/
+      method: GET
+    schema:
+      attributes:
+        aliases:
+          id: id

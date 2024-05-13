@@ -35,5 +35,7 @@ func (p *modoboaProvider) DataSources(ctx context.Context) []func() datasource.D
 }
 
 func (p *modoboaProvider) Resources(ctx context.Context) []func() resource.Resource {
-	return []func() resource.Resource{}
+	return []func() resource.Resource{
+		NewDomainsResource,
+	}
 }
